@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="top|center_horizontal"
+    android:background="@color/main_title_back">
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/home_title"
+        android:textColor="@color/home_title_text"
+        android:textSize="24sp" />
+    
+    <ImageView
+        android:id="@+id/home_image_1"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitCenter"
+        android:gravity="top"
+        android:src="@drawable/defaultimage"
+        android:contentDescription="@string/default_image_text"
+        />
+        
+
+    <TextView
+        android:id="@+id/home_main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/home_main_text"
+        android:textColor="@color/home_main_text"
+        android:textStyle="italic"
+        android:textSize="22sp" />
+
+</LinearLayout>

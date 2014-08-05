@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/menu_home"
+          android:title="@string/home_title"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/menu_story"
+          android:title="@string/story_title"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/menu_image"
+          android:title="@string/image_title"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/menu_bio"
+          android:title="@string/bio_title"
+          android:showAsAction="never" />
+    
+    <item android:id="@+id/menu_email"
+          android:title="@string/email_title"
+          android:showAsAction="never" />
+        
+
+</menu>

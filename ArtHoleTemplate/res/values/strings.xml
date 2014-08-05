@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="app_name">Impressive App</string>
+    
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    
+    <string name="section_1_title">Home</string>
+    <string name="section_2_title">Story</string>
+    <string name="section_3_title">Image</string>
+    <string name="section_4_title">Bio</string>
+    <string name="section_5_title">Email</string>
+
+    
+    <string name="home_title">Impressive Title</string>
+    <string name="home_main_text">\"Impressive Description\"</string>
+    
+    <string name="story_title">Impressive Story Title</string>
+    <string name="story_main_text">Impressive Story</string>
+    
+    <string name="bio_title">Impressive Member</string>
+    <string name="bio_first_text">Impressive Feat</string>
+    <string name="bio_second_text">Impressive Quote</string>
+    <string name="bio_third_text">Impressive Fact</string>
+    
+    <string name="image_title">Impressive Image</string>
+
+    
+    <string name="email_title">Email Us</string>
+    <string name="email_button_text">Email with this button</string>
+        
+    <string name="email_address">ImpressiveEmailAddress@gmail.com</string>
+    <string name="email_subject">Impressive email subject</string>
+    <string name="email_body">Impressive email body</string>
+    <string name="email_chooser">Impressive email chooser text</string>
+    
+    <string name="default_image_text">Main Image</string>
+        
+
+</resources>

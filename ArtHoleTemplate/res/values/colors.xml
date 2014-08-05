@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_title_text">#000000</color>
+    <color name="main_title_back">#ffffff</color>
+    
+    <color name="tab_selected">#ffeeee</color>
+    <color name="tab_unselected">#ffffff</color>
+    
+    <color name="home_title_text">#000000</color>
+    <color name="home_main_text">#000000</color>
+    
+    <color name="story_title_text">#000000</color>
+    <color name="story_main_text">#000000</color>
+    
+    <color name="image_title_text">#000000</color>
+    
+    <color name="bio_title_text">#000000</color>
+    <color name="bio_first_text">#000000</color>
+    <color name="bio_second_text">#000000</color>
+    <color name="bio_third_text">#000000</color>
+    
+    <color name="email_title_text">#000000</color>
+    <color name="email_button_text">#000000</color>
+    
+</resources>
