@@ -53,12 +53,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         //Remember to remove the set of methods/classes corresponding to the other option
         
         
-        //setMenuLayout(savedInstanceState);
-        //layout_type = 1;
+        setMenuLayout(savedInstanceState);
+        layout_type = 1;
         
         
-        setTabLayout(savedInstanceState);
-        layout_type = 2;
+        //setTabLayout(savedInstanceState);
+        //layout_type = 2;
         
         
     }
@@ -254,7 +254,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
         // When the given tab is selected, switch to the corresponding page in the ViewPager.
-        mViewPager.setCurrentItem(tab.getPosition());
+    	int position = tab.getPosition();
+        mViewPager.setCurrentItem(position);
+        setTitle(mAppSectionsPagerAdapter.getPageTitle(position));
+        
     }
 
     @Override
@@ -523,9 +526,6 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     		ImageView firstImage = (ImageView)rootView.findViewById(R.id.home_image_1);
     		firstImage.setImageDrawable(getResources().getDrawable(R.drawable.defaultimage));
     		firstImage.setContentDescription(getString(R.string.default_image_text));
-    		
-            
-            getActivity().setTitle(getString(R.string.home_title));
             
             return rootView;
         }
@@ -549,9 +549,6 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     		TextView firstText = (TextView)rootView.findViewById(R.id.story_main_text);
     		firstText.setText(getString(R.string.story_main_text));
     		
-    		getActivity().setTitle(getString(R.string.story_title));
-    		
-    		
             return rootView;
         }
     }
@@ -574,9 +571,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     		ImageView firstImage = (ImageView)rootView.findViewById(R.id.image_image_1);
     		firstImage.setImageDrawable(getResources().getDrawable(R.drawable.defaultimage));
     		firstImage.setContentDescription(getString(R.string.default_image_text));
-    		
-    		getActivity().setTitle(getString(R.string.image_title));
-    		
+
             return rootView;
         }
     }
@@ -609,9 +604,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     		ImageView firstImage = (ImageView)rootView.findViewById(R.id.bio_image_1);
     		firstImage.setImageDrawable(getResources().getDrawable(R.drawable.defaultimage));
     		firstImage.setContentDescription(getString(R.string.default_image_text));
-    		
-    		getActivity().setTitle(getString(R.string.bio_title));
-    		
+    			
     		return rootView;
     	}
 
@@ -648,9 +641,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     		
     		TextView buttonText = (TextView)rootView.findViewById(R.id.email_button);
     		buttonText.setText(getString(R.string.email_button_text));
-    		
-    		getActivity().setTitle(getString(R.string.email_title));
-    		
+  		
             return rootView;
         }
         
